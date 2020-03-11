@@ -26,9 +26,8 @@ Libraries Used.
 ## Selenium techinques used
 
 - Action chains
-- Navigations
-- Locating elements (css - default, xpath as secondary locator strategy and custom locator method based on text of the element)
-
+- Writing wrapper functions for cumbersome selnium API's
+- Added a custom locating method using text of the element (used xpath and text() internally)
 
 ## How to run
 
