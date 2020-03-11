@@ -6,9 +6,6 @@ class SeleniumAPIWrapper():
 	def __init__(self,driver_config):
 		self.driver = driver_config
 
-	def close_browser(self):
-		self.driver.quit()
-
 	#Using css selector as default locator strategy
 	def get_element(self,selector):
 		return self.driver.find_element(By.CSS_SELECTOR,selector)

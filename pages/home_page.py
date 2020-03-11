@@ -1,17 +1,17 @@
 from helpers.base_driver import Browser
-from common.variables import base_url, home_page_locators
+from common.variables import *
 
 class HomePage(Browser):
 
-	def __init__(self,browser):
-		super().__init__(browser)
+	def __init__(self,context):
+		self.driver = context.driver
 
-	def gotoHomepage(self):
-		self.get(base_url)
+	def gotoPage(self,url):
+		self.get(url)
 
-	def validateHomePageIsLoaded(self):
-		home_title = self.get_element(home_page_locators['home_label'])
-		assert 'Home' in home_title.text, 'Home label is not visible';
+	def validateHomePageIsLoaded(self,page_label):
+		home_title = self.get_element(home_page_locators['window_title_txt'])
+		assert page_label in home_title.text, 'Home label is not visible';
 
 	def selectItemInSelectableWindown(self,item):
 		items = self.get_elements(home_page_locators['selectable_items'])
@@ -46,11 +46,3 @@ class HomePage(Browser):
 			if i.text == title:
 				i.click();
 				break
-
-x = HomePage('chrome')
-x.gotoHomepage();
-x.validateHomePageIsLoaded()
-x.gotoLink('Droppable')
-x.dragItemToDroppableArea()
-x.checkIfItemIsDropped()
-x.close_browser()
