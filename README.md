@@ -1,7 +1,7 @@
 # PySel
-Selenium implementation with Python, POM &amp; Behave!
+Selenium3 implementation with Python, POM &amp; BDD!
 
-This is purely a Sample Selenium Framework, attempted to keep it as simple as possible and also by making use of some of best know practices of Test Automation.
+This is purely a Demo Selenium Framework, attempted to keep it as simple as possible and also by making use of some of best know practices of Test Automation.
 
 Libraries Used.
 - Selenium
@@ -18,28 +18,26 @@ Libraries Used.
 
 ## Python techniques used
 
-- Page Object Model (using classes and objects)
+- Page Object Model
 - Multi level Inheritance
 - Static methods
-- Assertions
 
 ## Selenium techinques used
 
 - Action chains
-- Writing wrapper functions for cumbersome selnium API's
-- Added a custom locating method using text of the element (used xpath and text() internally)
+- Writing wrapper functions for cumbersome selnium API's :(
+- Added a custom locating method using text of the element (used xpath internally)
 
 ## How to run
 
 Pre-Requisites.
 1. Python3
 2. Webdriver's should be installed
-3. Install the libraries mentioned in requirement.txt
-
-`pip install -r requirements.txt'
+3. Define the browser type in `common/variables.py`file (chrome / firefox)
+3. Install the libraries mentioned in requirement.txt using the command`pip install -r requirements.txt`
 
 Use any of the below commands to run
 1. Go to the parent directory (ie. pysel)
-2. behave                                     // To run all the scenarios
+2. type `behave` and hit enter.                                     // To run all the scenarios
   or
-3. behave --tags='regression' -k              // To run only tests which are using @regression tag
+3. type `behave --tags='regression' -k` and hit enter               // To run only tests which are using @regression tag
