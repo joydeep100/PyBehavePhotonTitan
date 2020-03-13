@@ -9,4 +9,4 @@ def before_scenario(feature,context):
 	context.driver = browser_obj.driver
 
 def after_scenario(feature,context):
-	context.driver.close()
+	context.driver.quit()
