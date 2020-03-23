@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'pip3.8 install -r requirements.txt'
-	sh 'pwd'
+        sh 'pwd'
       }
     }
 
