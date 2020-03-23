@@ -10,7 +10,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'behave --tags=regression --junit --junit-directory /var/lib/jenkins/workspace/pysel_master'
+        sh 'behave --tags=regression --junit --junit-directory .'
       }
     }
 
