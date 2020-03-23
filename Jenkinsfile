@@ -15,7 +15,7 @@ pipeline {
 
     stage('Reporting') {
       steps {
-        junit 'reports/*.xml'
+        junit '/home/joydeep/pysel/reports/TESTS-home_page.xml'
       }
     }
 
