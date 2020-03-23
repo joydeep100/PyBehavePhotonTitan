@@ -9,13 +9,13 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'behave --tags=regression --junit'
+        sh 'behave --tags=regression --junit --junit-directory .'
       }
     }
 
     stage('Reporting') {
       steps {
-        junit '**/reports/*.xml'
+        junit 'TESTS-home_page.xml'
       }
     }
 
