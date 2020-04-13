@@ -3,11 +3,13 @@ Selenium3 implementation with Python, POM &amp; BDD!
 
 This is purely a Selenium Framework, attempted to keep it as simple as possible and also by making use of some of best know practices of Test Automation.
 
+Environment
+- Linux / Mac
+
 Libraries Used.
 - Selenium
 - Behave (BDD)
-
-- Python version used 3.8
+- Python version 3.8
 
 ## Behave techniques used
 
