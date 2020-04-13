@@ -9,7 +9,9 @@ class Browser(SeleniumAPIWrapper):
 		if browser_type == 'chrome':
 
 			chromeOptions = webdriver.ChromeOptions()
+			
 			chromeOptions.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
+			
 			chromeOptions.add_argument("--no-sandbox")
 			#Other optional args 
 			# --disable-setuid-sandbox, --remote-debugging-port=9222,  --disable-dev-shm-using
