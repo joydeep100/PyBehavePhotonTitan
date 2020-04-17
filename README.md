@@ -4,7 +4,7 @@ Selenium3 implementation with Python, POM &amp; BDD!
 This is purely a Selenium Framework, attempted to keep it as simple as possible and also by making use of some of best know practices of Test Automation.
 
 Environment
-- Linux / Mac
+- Linux / Mac / Windows
 
 Libraries Used.
 - Selenium
@@ -34,7 +34,7 @@ Libraries Used.
 
 Pre-Requisites.
 1. Python3
-2. Webdriver's should be installed
+2. Webdriver's be downloaded and kept in system PATH
 3. Define the browser type in `common/variables.py`file (chrome / firefox)
 3. Install the libraries mentioned in requirement.txt using the command`pip install -r requirements.txt`
 
