@@ -9,7 +9,7 @@ Environment
 Libraries Used.
 - Selenium
 - Behave (BDD)
-- Python version 3.8
+- Python3
 
 ## Behave techniques used
 
