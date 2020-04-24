@@ -6,10 +6,17 @@ Scenario: To check if the home page is loading sucessfully
 	And I verify if the "Home" page is loaded sucessfully
 
 @smoke
-Scenario: To check if we are able to select and highlight an item
+Scenario: To check if we are able to select and highlight an item (item3)
 	Given I go to the home page
 	And I go to the "Selectable" link
 	And I select "Item 3" from the list of items
+	And I check if the item is selected
+
+@smoke
+Scenario: To check if we are able to select and highlight an item (item4)
+	Given I go to the home page
+	And I go to the "Selectable" link
+	And I select "Item 4" from the list of items
 	And I check if the item is selected
 
 @smoke
