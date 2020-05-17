@@ -1,5 +1,5 @@
 # PySel!
-Selenium3 implementation with Python, POM &amp; BDD!
+Selenium implementation with Python, POM &amp; BDD!
 
 This is purely a Selenium Framework, attempted to keep it as simple as possible and also by making use of some of best know practices of Test Automation.
 
