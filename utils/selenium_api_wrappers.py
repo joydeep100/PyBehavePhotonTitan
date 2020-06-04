@@ -24,8 +24,7 @@ class SeleniumAPIWrapper():
 	def get_elements_xpath(self,selector):
 		return self.driver.find_elements(By.XPATH,selector)
 
-	def get_element_by_text(self,text,parent_element=''):
-		parent_element = parent_element if (parent_element != '') else '*'
+	def get_element_by_text(self,text,parent_element='*'):
 		selector = '//{}[text()="{}"]'.format(parent_element,text)
 		return self.driver.find_element(By.XPATH,selector)
 
